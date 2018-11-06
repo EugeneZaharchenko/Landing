@@ -1,0 +1,29 @@
+{
+  "name": "gulp_landing",
+  "version": "1.0.0",
+  "description": "ITVDN gulp_landing",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+
+  "config": {
+    "src": {
+      "sass": "src/sass/main.sass"
+    },
+    "dist":
+    {"css": "dist/css"}
+  },
+
+  "dist": {
+    "css": "dist/css"
+  },
+  "author": "Eugene",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.10.0",
+    "require-dir": "^1.1.0"
+  }
+}
