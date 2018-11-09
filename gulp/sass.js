@@ -3,6 +3,7 @@ var sass = require('gulp-sass');
 var cnf = require('../package.json').config;
 var autoprefixer = require('gulp-autoprefixer');
 var cssnano = require('gulp-cssnano')
+var rename = require("gulp-rename");
 // sass.compiler = require('node-sass');
 
 gulp.task('sass', function () {
@@ -13,6 +14,14 @@ gulp.task('sass', function () {
             cascade: false
         }))
         .pipe(cssnano())
+
+        .pipe(rename({
+            dirname: "",
+            basename: "main",
+            prefix: "",
+            suffix: ".min",
+            extname: ".css"
+        }))
         .pipe(gulp.dest(cnf.dist.css));
 });
 
