@@ -9,11 +9,13 @@
   "config": {
     "src": {
       "sass": "src/sass/main.sass",
-      "html": "src/"
+      "html": "src/",
+      "js": "src/js/main.js",
     },
     "dist": {
       "css": "dist/css",
-      "html": "dist/"
+      "html": "dist/",
+      "js": "dist/js/",
     }
   },
   "dist": {

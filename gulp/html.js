@@ -1,10 +1,11 @@
 var gulp        = require('gulp');
 var cnf         = require('../package.json').config;
 var plumber     = require('gulp-plumber');
-var notify = require("gulp-notify");
+var notify      = require("gulp-notify");
+var fileinclude = require('gulp-file-include')
 
 gulp.task('html', function () {
-    return gulp.src(cnf.src.html + './*.html')
+    return gulp.src(cnf.src.html + '/*.html')
         .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
         .pipe(fileinclude({
             prefix: '@@',
@@ -14,5 +15,5 @@ gulp.task('html', function () {
 });
 
 gulp.task('html:watch', function () {
-    gulp.watch('./src/sass/**/*.*', ['html']);
+    gulp.watch(['src/**/*.html'], ['html']);
 });
