@@ -6,5 +6,7 @@ gulp.task('build', function() {
         'sass',
         'html',
         'js',
+        'fonts',
+        'img:watch',
         );
 });
