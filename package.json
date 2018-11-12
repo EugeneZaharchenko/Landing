@@ -32,7 +32,6 @@
       "css": "src/css/libs.css"
     }
   },
-
   "author": "Eugene",
   "license": "ISC",
   "devDependencies": {
@@ -59,5 +58,8 @@
     "node-sass-tilde-importer": "^1.0.2",
     "require-dir": "^1.1.0",
     "run-sequence": "^2.2.1"
+  },
+  "dependencies": {
+    "del": "^3.0.0"
   }
 }

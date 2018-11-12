@@ -34,5 +34,6 @@ gulp.task('libs', function () {
 });
 
 gulp.task('libs:watch', function () {
-    gulp.watch('./src/css/**/*.*', ['libs']);
+    gulp.watch(cnf.libs.css, ['libs']);
+    gulp.watch(cnf.libs.js, ['libs']);
 });
